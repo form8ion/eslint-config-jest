@@ -1,1 +1,1 @@
-const eslintConfigJest = '.';
+const eslintConfigJest = require('.');
