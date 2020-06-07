@@ -37,7 +37,12 @@ $ npm install @form8ion/eslint-config-jest --save-dev
 ### Example
 
 ```javascript
-const eslintConfigJest = require('@form8ion/eslint-config-jest');
+module.exports = {
+  "extends": [
+    "@form8ion",
+    "@form8ion/jest"
+  ]
+};
 ```
 
 ## Contributing
