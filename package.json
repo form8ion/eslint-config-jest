@@ -17,6 +17,7 @@
   "author": "Matt Travi <npm@travi.org> (https://matt.travi.org/)",
   "scripts": {
     "test": "npm-run-all --print-label --parallel lint:*",
+    "lint:js": "eslint . --cache",
     "lint:lockfile": "lockfile-lint --path package-lock.json --type npm --validate-https --allowed-hosts npm",
     "lint:md": "remark . --frail",
     "generate:md": "remark . --output",
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "@form8ion/commitlint-config": "1.0.9",
+    "@form8ion/eslint-config": "1.6.17",
     "@form8ion/remark-lint-preset": "1.0.6",
     "@travi/travis-lint": "1.0.1",
     "ban-sensitive-files": "1.9.7",
@@ -36,5 +38,9 @@
     "remark-cli": "8.0.0",
     "remark-toc": "7.0.0",
     "remark-usage": "8.0.0"
+  },
+  "dependencies": {
+    "eslint-plugin-jest": "23.13.2",
+    "typescript": "^3.9.5"
   }
 }
