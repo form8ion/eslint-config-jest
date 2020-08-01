@@ -30,7 +30,7 @@
     "@form8ion/eslint-config": "1.6.26",
     "@form8ion/remark-lint-preset": "1.0.9",
     "@travi/travis-lint": "1.0.1",
-    "ban-sensitive-files": "1.9.7",
+    "ban-sensitive-files": "1.9.8",
     "cz-conventional-changelog": "3.2.0",
     "husky": "4.2.5",
     "lockfile-lint": "4.3.7",
