@@ -3,18 +3,11 @@
   "description": "shareable config for ESLint for Jest test files",
   "license": "MIT",
   "version": "0.0.0-semantically-released",
-  "files": [
-    "example.js",
-    "index.js"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
-  "runkitExampleFilename": "./example.js",
+  "author": "Matt Travi <npm@travi.org> (https://matt.travi.org/)",
   "repository": "form8ion/eslint-config-jest",
   "bugs": "https://github.com/form8ion/eslint-config-jest/issues",
   "homepage": "https://npm.im/@form8ion/eslint-config-jest",
-  "author": "Matt Travi <npm@travi.org> (https://matt.travi.org/)",
+  "runkitExampleFilename": "./example.js",
   "scripts": {
     "test": "npm-run-all --print-label --parallel lint:*",
     "lint:js": "eslint . --cache",
@@ -22,7 +15,19 @@
     "lint:md": "remark . --frail",
     "generate:md": "remark . --output",
     "lint:sensitive": "ban",
-    "lint:peer": "npm ls >/dev/null"
+    "lint:peer": "npm ls >/dev/null",
+    "prepare": "husky install"
+  },
+  "files": [
+    "example.js",
+    "index.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "eslint-plugin-jest": "27.2.1",
+    "typescript": "^5.0.0"
   },
   "devDependencies": {
     "@form8ion/commitlint-config": "1.0.45",
@@ -36,9 +41,5 @@
     "remark-cli": "11.0.0",
     "remark-toc": "8.0.1",
     "remark-usage": "10.0.1"
-  },
-  "dependencies": {
-    "eslint-plugin-jest": "27.2.1",
-    "typescript": "^5.0.0"
   }
 }
