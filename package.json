@@ -27,7 +27,7 @@
     "provenance": true
   },
   "dependencies": {
-    "eslint-plugin-jest": "28.8.0",
+    "eslint-plugin-jest": "28.8.1",
     "typescript": "^5.0.0"
   },
   "devDependencies": {
