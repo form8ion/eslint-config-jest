@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "eslint-plugin-jest": "29.15.1",
-    "typescript": "^5.0.0"
+    "typescript": "^6.0.0"
   },
   "devDependencies": {
     "@form8ion/commitlint-config": "2.0.11",
